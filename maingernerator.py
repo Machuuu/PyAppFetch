@@ -2,9 +2,9 @@ from faker import Faker
 
 fake = Faker()
 
-Names = ["" for x in range(20)]
+Names = []
 
 for x in range(0,20):
-    Names[x] = fake.name()
+    Names.append(fake.name())
 
 print(Names)
