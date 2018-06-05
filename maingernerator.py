@@ -16,7 +16,7 @@ with open(filename, 'w') as file:
     file.write(header)
 
     for index, name in enumerate(Names):
-        file.write("( " + str(index) + ", " + name + " )")
+        file.write("( " + str(index) + ", " + "\'" + name + "\'" + " )")
 
         if index != len(Names) - 1:
             file.write(", \n")
